@@ -29,7 +29,9 @@ async def start(message: types.Message):
 
  دیداس خوش امدید برای شروع: /attack! برای کسب اطلاعات بیشتر پلتفرم : /help 
            
-                              ارتباط با برنامه نویس @farshadfaza2""".format(message.from_user)) 
+                              ارتباط با برنامه نویس 
+twitter.com/farshadfaza2
+""".format(message.from_user)) 
     await bot.send_message(message.chat.id, """ 
 #Opiran
 #MahsaAmini
@@ -104,7 +106,7 @@ async def attackstart(message: types.Message):
 @dp.message_handler(commands="help")
 async def attackstart(message: types.Message):
     await bot.send_message(message.chat.id,"Naqs Amniat - بات قدرتمند دیداس\
-                      - برنامه نویسی شده توسط @Nimajafarpor")
+                      - برنامه نویسی شده توسط @Farshadfarokh")
 
 @dp.message_handler(text="Top Charts")
 async def Ton(message: types.Message):
