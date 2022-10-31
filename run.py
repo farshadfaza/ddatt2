@@ -23,10 +23,13 @@ class Attack(StatesGroup):
     thr = State()
     target = State()
 
-@dp@dp.message_handler(commands="start")
-async def start(message: types.Message):
-    await bot.send_message(message.chat.id, 'با درود {0.first_name} ! به ربات دیداس خوش امدید برای شروع: /attack!\ برای کسب اطلاعات بیشتر پلتفرم : /help\
-                              ارتباط با نویسنده https://twitter.com/farshadfaza2'.format(message.from_user))
+@dp.message_handler(commands="start") 
+async def start(message: types.Message): 
+    await bot.send_message(message.chat.id, """با درود {0.first_name} ! به ربات
+
+ دیداس خوش امدید برای شروع: /attack! برای کسب اطلاعات بیشتر پلتفرم : /help 
+           
+                              ارتباط با برنامه نویس @farshadfaza2""".format(message.from_user)) 
     await bot.send_message(message.chat.id, """ 
 #Opiran
 #MahsaAmini
@@ -36,8 +39,8 @@ We are Anonymous.
 We are Legends 
 We never Forgive.
 We never Forget.🕊
-""")
-    
+""") 
+     
     pass
 def dos(site):
     global coutrequests
